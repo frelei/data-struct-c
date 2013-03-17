@@ -9,9 +9,6 @@ typedef struct node{
 typedef struct queue{
 	Node *start;
 	Node *end;
-	/* tamanho em número de bytes de cada elemento */
-	//unsigned int element_bytes;
-	/* Quantidade de elementos da fila*/	
 	int size;
 }Queue;
 

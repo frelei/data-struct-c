@@ -32,12 +32,11 @@ Node *find_second_element(Queue *queue){
 	return ptr;
 } 
 
-/* Creates queue   unsigned int element_bytes  */
+/* Creates queue */
 Queue* create_queue(){
 	Queue* queue = (Queue*) mallocc(sizeof(Queue));
 	queue->start = NULL;
 	queue->end = NULL;
-	//queue->element_bytes = element_bytes; 
 	queue->size = 0;
 	return queue;
 }
@@ -45,7 +44,6 @@ Queue* create_queue(){
 /* Add element in the tail the queue*/
 void add(Queue *queue,void *element){
 	Node *node = mallocc(sizeof(Node));
-	//node->element = mallocc(queue->element_bytes);
 	node->element = element;
 
 	if(queue->size == 0){
